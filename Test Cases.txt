@@ -1,0 +1,20 @@
+
+
+
+Manual Test Case #1:
+-----------------------------
+Test Case ID: 1
+Description: Verfiy that a task can be added, is marked as incomplete as default, can be marked as complete, and then verified as complete.
+Preconditions: Empty task list.
+
+Steps:
+    1. Start the program
+    2. Select "Add Task" from the menu.
+    3. Enter "Study for exam" as the description.
+    4. Verify the task list contains "Study for exam" as an incomplete task.
+    5. Mark the task as complete.
+    6. Verify that "Study for exam" is now marked as complete.
+
+Expected Result:
+    1. After step 4, task should be marked as incomplete.
+    2. After step 6, task should be marked as complete.

@@ -18,3 +18,23 @@ Steps:
 Expected Result:
     1. After step 4, task should be marked as incomplete.
     2. After step 6, task should be marked as complete.
+
+Manual Test Case #2:
+-----------------------------
+Test Case ID: 2
+Description: Verify that a task can be added, and the task description can be updated successfully.
+Preconditions: Empty task list.
+
+Steps:
+    1. Start the program.
+    2. Select "Add Task" from the menu.
+    3. Enter "Study for Exam" as the description.
+    4. Verify the task list contains "Study for Exam" as an incomplete task.
+    5. Select "Update Task" from the menu.
+    6. Choose the task "Study for Exam" for editing.
+    7. Enter the new description "Study for CS-555 Exam".
+    8. Verify the task list now contains "Study for CS-555 Exam" instead of "Study for Exam".
+
+Expected Result:
+    1. After step 4, the task list should contain "Study for Exam" as an incomplete task.
+    2. After step 8, the task list should contain "Study for CS-555 Exam" as an incomplete task, verifying that the description was updated successfully.

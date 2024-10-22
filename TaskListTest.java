@@ -22,5 +22,21 @@ public class TaskListTest {
         assertTrue(taskList.tasks.get(0).getStatus());
     }
 
+    @Test
+    public void testEditTask() {
+        // Add a task
+        TaskList taskList = new TaskList();
+        taskList.addTask("Study for Exam");
+        // Verify the task is added
+        assertEquals(1, taskList.tasks.size());
+        // Verify the task description
+        assertEquals("Study for Exam", taskList.tasks.get(0).getTask());
+        // Edit the task description
+        taskList.editTask(1, "Study for CS-555 Exam");
+        // Verify the updated task description
+        assertEquals("Study for CS-555 Exam", taskList.tasks.get(0).getTask());
+    }
+
+
 }
 

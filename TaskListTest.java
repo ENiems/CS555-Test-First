@@ -37,6 +37,39 @@ public class TaskListTest {
         assertEquals("Study for CS-555 Exam", taskList.tasks.get(0).getTask());
     }
 
+    @Test
+    public void testMultipleTaskDeletion() {
+        // Add three tasks
+        TaskList taskList = new TaskList();
+        taskList.addTask("Study for Exam");
+        taskList.addTask("Go for a run");
+        taskList.addTask("Complete project");
+
+        // Verify all tasks are added
+        assertEquals(3, taskList.tasks.size());
+        assertEquals("Study for Exam", taskList.tasks.get(0).getTask());
+        assertEquals("Go for a run", taskList.tasks.get(1).getTask());
+        assertEquals("Complete project", taskList.tasks.get(2).getTask());
+
+        // Delete the second task
+        taskList.deleteTask(2);
+        // Verify the task list contains the correct remaining tasks
+        assertEquals(2, taskList.tasks.size());
+        assertEquals("Study for Exam", taskList.tasks.get(0).getTask());
+        assertEquals("Complete project", taskList.tasks.get(1).getTask());
+
+        // Delete the third task
+        taskList.deleteTask(2);
+        // Verify only the first task remains
+        assertEquals(1, taskList.tasks.size());
+        assertEquals("Study for Exam", taskList.tasks.get(0).getTask());
+
+        // Delete the first task
+        taskList.deleteTask(1);
+        // Verify the task list is now empty
+        assertEquals(0, taskList.tasks.size());
+    }
+
 
 }
 

@@ -1,6 +1,4 @@
 
-
-
 Manual Test Case #1:
 -----------------------------
 Test Case ID: 1
@@ -18,6 +16,7 @@ Steps:
 Expected Result:
     1. After step 4, task should be marked as incomplete.
     2. After step 6, task should be marked as complete.
+
 
 Manual Test Case #2:
 -----------------------------
@@ -38,3 +37,33 @@ Steps:
 Expected Result:
     1. After step 4, the task list should contain "Study for Exam" as an incomplete task.
     2. After step 8, the task list should contain "Study for CS-555 Exam" as an incomplete task, verifying that the description was updated successfully.
+
+
+Manual Test Case #3:
+-----------------------------
+Test Case ID: 3
+Description: Verify that multiple tasks can be added and then deleted one by one, ensuring each deletion occurs in the correct order.
+Preconditions: Empty task list.
+
+Steps:
+    1. Start the program.
+    2. Select "Add Task" from the menu.
+    3. Enter "Study for Exam" as the first task description.
+    4. Enter "Go for a run" as the second task description.
+    5. Enter "Complete project" as the third task description.
+    6. Verify that all three tasks are present in the task list in the order they were added.
+    7. Select "Delete Task" from the menu.
+    8. Choose "Go for a run" for deletion.
+    9. Verify the task list now contains two tasks in the correct order: "Study for Exam" and "Complete project".
+    10. Select "Delete Task" again.
+    11. Choose "Complete project" for deletion.
+    12. Verify the task list now contains only one task: "Study for Exam".
+    13. Delete the last task, "Study for Exam".
+    14.Verify the task list is now empty.
+
+Expected Result:
+    1. After step 6, the task list should contain three tasks in the correct order.
+    2. After step 9, the task list should contain "Study for Exam" and "Complete project".
+    3. After step 12, the task list should contain only "Study for Exam".
+    4. After step 14, the task list should be empty, verifying that each deletion occurred correctly and in sequence without affecting the remaining tasks.
+     

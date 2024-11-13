@@ -13,4 +13,4 @@ Priority: 1
 
 Story Points: 1
 
-Description: As a student, I want to be able to track and update a planner to keep  track of my homework and assignments due dates.
+Description: As a student, I want to be able to track and update a planner to keep track of my homework and assignments' due dates.
